@@ -93,3 +93,7 @@ use this command in angular CLI "ng test --watch=false --browsers=ChromeHeadless
 ## Push local image to docker hub registry
 > docker tag project-manager-fsd-app:latest rahulishu/project-manager-fsd-app:latest
 > docker push rahulishu/project-manager-fsd-app:latest
+
+## Automated test result in testing document
+Testing.docx
+
