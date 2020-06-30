@@ -73,15 +73,13 @@ use this command in angular CLI "ng test --watch=false --browsers=ChromeHeadless
 > ng component service services/task
 > ng component service services/viewtask
 
-
-
 ## Build docker image
 > cd project-manager-fsd-app
 > ng build --prod
 > docker build -t project-manager-fsd-app:latest .
 
 ## Run image
-> docker run --name project-manager-fsd-app -d -p 8080:80 project-manager-fsd-app:latest
+> docker run --name project-manager-fsd-app -d -p 4200:4200 project-manager-fsd-app:latest
 > docker container ls
 
 ## check nginx container if app is deployed 
@@ -97,3 +95,6 @@ use this command in angular CLI "ng test --watch=false --browsers=ChromeHeadless
 ## Automated test result in testing document
 Testing.docx
 
+## CI/CD : Jenkins File to build and create docker image
+create new item in Jenkins http://localhost:8080/
+and add the jenkinsfile from git repository
